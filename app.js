@@ -6,7 +6,7 @@ app.use('/users' ,(req, res, next) => {
     res.send('<h1>Users Page</h1>');
 });
 
-app.use((req, res, next) => {
+app.use('/', (req, res, next) => {
     res.send('<h1>Main Page</h1>')
 })
 
